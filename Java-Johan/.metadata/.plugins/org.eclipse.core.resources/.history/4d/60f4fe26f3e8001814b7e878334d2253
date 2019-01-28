@@ -1,0 +1,19 @@
+package files;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+public class Textos {
+	public void leer(String miArchivo) {
+		try {
+			FileReader r = new FileReader(miArchivo);
+			BufferedReader buffer = new BufferedReader(r);
+			
+			String tmp = "";
+			
+			System.out.println(buffer.readLine());
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+	}
+}

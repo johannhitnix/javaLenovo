@@ -1,0 +1,12 @@
+package files;
+
+public class Textos {
+	public void leer(String miArchivo) {
+		try {
+			FileReader r = new FileReader(miArchivo);
+			BufferedReader buffer = new BufferedReader(r);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}
